@@ -52,13 +52,17 @@ int main(int argc , char *argv[]) {
     }
     char c; size_t n=0;
     char DomainPrefix[70] , domain[100], *data = NULL;
-    time_t ltime; /* calendar time */
-    ltime=time(NULL); /* get current cal time */
+    time_t timer; /* calendar time */
+    char timebuffer[26];
+    struct tm* tm_info;
+    time(&timer);
+    tm_info = localtime(&timer);
+    strftime(timebuffer, 26, "%Y%m%d-%H%M%S", tm_info);
     char outressults[255];
         strcpy(outressults, "./result/");
         strcat(outressults, DomainExt);
         strcat(outressults, "_RESULTS(");
-        strcat(outressults, asctime( localtime(&ltime) ));
+        strcat(outressults, timebuffer);
         strcat(outressults, ").txt");
     FILE * fp_Result = fopen(outressults,"w");
     if (fp_Result==NULL) {
