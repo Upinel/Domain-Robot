@@ -1,4 +1,4 @@
-# DomainMegaBot
+# Domain Robot
 A domain name bulk search bot with support of over 300 top-level domains.
 
 Usage:  
