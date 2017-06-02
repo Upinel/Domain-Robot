@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+dict/make.py
+
+domainrobot
+
+*.txt
