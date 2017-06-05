@@ -18,6 +18,8 @@ make domainrobot
 Please put the dict file under /dict. I come with a simple 3letter dict (lll) for your testing.  
 You can also generate your own dict using my Dict Generator in another project:  
 https://github.com/Upinel/Python-Dictionary-Generator  
+or you may also want to download some pre-generated ready to use dictionary files:  
+https://github.com/Upinel/Dictionary  
 You can find the output log under /result.
 
 Domain extentions database file TLD_DATA should be put under the "database" directory with domainrobot. The domain prefix dictionary should be a pure UNIX-based text file with one string each line. You can play with our demostration dictionaries to see how the program works.  
